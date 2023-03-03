@@ -62,6 +62,7 @@ nav img:hover ~ .navi,nav img:focus ~ .navi{
 nav{
     flex-direction: column;
     padding: 0;
+    z-index: 1000 !important;
 }    
 .navi {
     flex-direction:column;
@@ -70,7 +71,16 @@ nav{
 nav img{
     display: block;
 }
-
+.container .form-control{
+    max-width: 190px;
+    margin: 0;
+}
+.container{
+    margin: 5px;
+}
+.btn{
+    top: 63% !important;
+}
 }
 /* Body */
 article{
@@ -97,7 +107,7 @@ article h3{
 }
 article a,.btn{
     font-size: 20px;
-    top: 52%;
+    top: 55%;
     left: 11%;
     text-decoration: none;
     background-color: #3A98B9;
@@ -137,6 +147,7 @@ article a:hover ,.btn:hover{
     color: black;
 }
 .prope img,.gpt img{
+    margin-top: 50px;
     width: 300px;
     
 }
@@ -204,4 +215,17 @@ footer{
 }
 footer p{
     text-transform: capitalize;
+}
+#gpt:hover{
+    color: black;
+}
+.up{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 999;
+    bottom: 50px;
+    right: 10px;
+    cursor: pointer;
 }
